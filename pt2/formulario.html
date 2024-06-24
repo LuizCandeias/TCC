@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section>
+        <div id="formulario_pedido">
+            <h2>Pedido de compra</h2>
+            <form method="get" action="">
+                <fieldset>
+                    <legend>Faça seu pedido</legend>
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input type="text" name="nome">
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" required name="email" placeholder="">
+
+                    <br><br>
+
+                    <label for="address">Endereço:</label>
+                    <br>
+                    <input type="text" required name="address" placeholder="">
+
+                    <br><br>
+
+                    <label for="cep">CEP:</label>
+                    <br>
+                    <input type="number" required name="cep" placeholder="">
+
+                    <br><br>
+
+                    <legend>País:</legend>
+                    <input type="text" list="listaPais" name="pais">
+                    <datalist id="listaPais">
+                        <option value="Brasil"></option>
+                    </datalist>
+
+                    <br><br>
+
+                    <legend>Estado:</legend>
+                    <input type="text" list="listaEstados" name="estados">
+                    <datalist id="listaEstados">
+                        <option value="São Paulo"></option>
+                        <option value="Amapá"></option>
+                        <option value="Tocantins"></option>
+                        <option value="Sergipe"></option>
+                        <option value="Rio de Janeiro"></option>
+                        <option value="Rio Grande do Sul"></option>
+                        <option value="Rio Grande do Norte"></option>
+                        <option value="Bahia"></option>
+                        <option value="Paraíba"></option>
+                        <option value="Roraima"></option>
+                        <option value="Amazonas"></option>
+                    </datalist>
+                    <br><br>
+                    <legend>Escolha seu produto</legend>
+                    <br>
+                    <legend>Plano Mensal</legend>
+                    <br>
+                    <input type="checkbox" name="magon">
+                    <label for="gameBoy">
+                        <div>
+                         12 marmitas médias +2 consultas com um nutricionista +1 consulta adicional = R$204   
+                        </div>
+                    </label>
+                    <br>
+                    <input type="checkbox" name="Brigada Amaldiçoada class=" Livros">
+                    <label for="microTac">
+                        <div>
+                            4 marmitas grandes + 8 marmitas médias + 3 consultas com um nutricionista +1 consulta adicional= R$258   
+                           </div>
+                    </label>
+                    <br>
+                    <legend>Plano Trimestral</legend>
+                    <input type="checkbox" name=" A Espada De Shannara" class="Livros">
+                    <label for="macintosh">
+                        <div>
+                            12 marmitas médias +2 consultas com um nutricionista +1 consulta adicional = R$204   
+                           </div>
+                    </label>
+                    <br>
+                    <input type="checkbox" name="O Senhor Dos Anéis-A SOCIEDADE DO ANEL" class="Livros">
+                    <label for="macintosh">
+                        <div>
+                            12 marmitas médias +2 consultas com um nutricionista +1 consulta adicional = R$204   
+                           </div>
+                    </label>
+                    <br>
+                    
+
+
+
+                    <br><br>
+
+                    <label for="quantidade">Quantidade:</label><br>
+                    <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+
+                    <br><br>
+
+                    <legend>Forma de pagamento:</legend>
+                    <br>
+                    <input type="radio" name="pay" checked="required">
+                    <label>Cartão de crédito</label>
+                    <br>
+                    <input type="radio" name="pay">
+                    <label>Cartão de débito</label>
+                    <br>
+                    <input type="radio" name="pay">
+                    <label>Boleto</label>
+
+                    <br><br>
+
+                    <label for="nomeCartao">Nome no cartão:</label>
+                    <br>
+                    <input type="text" name="nomeCartao">
+
+                    <br><br>
+
+                    <label for="numeroCartao">Número do cartão:</label>
+                    <br>
+                    <input type="text" name="numeroCartao" max="16">
+
+                    <br><br>
+
+                    <label for="cc-expiration">Data de vencimento:</label>
+                    <br>
+                    <input type="text" required name="address" placeholder="01/30">
+
+                    <br><br>
+
+                    <label for="cvv">CVV:</label>
+                    <br>
+                    <input type="text" required name="cvv" placeholder="123">
+
+                    <br><br>
+
+                    <input type="submit" value="Continuar para finalizar a compra" id="botao_pedido"></input>
+
+                </fieldset>
+            </form>
+        </div>
+
+</body>
+
+</html>

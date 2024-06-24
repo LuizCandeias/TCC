@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8ca8f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #becdf8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #444;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="submit"],
+    textarea {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+
+    input[type="submit"] {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    fieldset {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="submit"],
+    textarea {
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        padding: 6px 12px;
+    }
+}
